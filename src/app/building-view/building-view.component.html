@@ -1,0 +1,19 @@
+<h4 class="refer"><b> BUILDINGS</b> </h4>
+<br>
+<div style="text-align:center"><a routerLink="/Createbuilding" class="btn btn-primary" routerLinkActive="active">Create New Building</a></div>
+<table class="table table-hover table-responsive table-bordered">
+<thead>
+  <tr>
+    <td> Buildings </td>
+    <td>Edit</td>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let x of build">
+    <td>{{ x.FacilityName }}</td>
+    
+    <td><a routerLink="/Buildedit/{{ x.FacilityKey}}" class="btn btn-primary">Edit</a></td>
+   
+  </tr>
+</tbody>
+</table>

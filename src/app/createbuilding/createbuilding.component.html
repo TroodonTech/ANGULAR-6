@@ -1,0 +1,26 @@
+<br><br>
+<div style="text-align:center">
+  <h3><strong>CREATE NEW BUILDING</strong></h3>
+</div>
+<br><br><br>
+<div class="form-row mb-4">
+  <div class="col"></div>
+  <div class="col"></div>
+  <h5><label for="building">Building</label></h5>
+ 
+    <div class="md-form">
+
+      <input type="text"  class="form-control" mdbInputDirective [(ngModel)]="BuildingName">
+    </div>
+    <div class="col">
+      <div style="text-align:center"><a routerLink="/Buildview" class="btn btn-primary" routerLinkActive="active" (click)="addBuilding(BuildingName)">Create
+          Building
+        </a>
+        <div style="text-align:center"><a routerLink="/Buildview" class="btn btn-primary" routerLinkActive="active">Go Back</a></div>
+      </div>
+    </div>
+ 
+  <div class="col"></div>
+  <div class="col"></div>
+
+</div>
